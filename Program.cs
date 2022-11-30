@@ -6,10 +6,12 @@
         {
             Console.WriteLine("Welcome to LinkedList program");
             Linkedlist ln = new Linkedlist();
-            ln.Add(70);
-            ln.Add(30);
             ln.Add(56);
-           
+            ln.Add(30);
+            ln.Add(70);
+            ln.InsertAtParticularPosition(2, 30);
+            ln.Display();
+
         }
     }
 }
