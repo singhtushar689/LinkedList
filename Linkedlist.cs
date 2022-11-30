@@ -41,23 +41,23 @@ namespace LinkedList
                 temp = temp.next;
             }
         }
-        internal Node RemoveLastNode()
+        internal int Search(int value)
         {
-            if (head == null)
+            Node node = this.head;
+            int count = 1;
+            while (node != null)
             {
-                return null;
+
+                if (node.data == value)
+                {
+                    Console.WriteLine($"\nThe {value} is at Node : " + count);
+                    return count;
+                }
+                node = node.next;
+                count++;
             }
-            if (head.next == null)
-            {
-                return null;
-            }
-            Node NewNode = head;
-            while (NewNode.next.next != null)
-            {
-                NewNode = NewNode.next;
-            }
-            NewNode.next = null;
-            return head;
+            return count;
         }
-    }  
+    }    
 }
+

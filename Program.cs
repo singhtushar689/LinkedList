@@ -9,10 +9,7 @@
             ln.Add(56);
             ln.Add(30);
             ln.Add(70);
-            ln.RemoveLastNode();
-            Console.WriteLine("After removing , Now LinkedList is : ");
-
-            ln.Display();
+            int search = ln.Search(30);
         }
     }
 }
