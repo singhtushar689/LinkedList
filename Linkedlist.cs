@@ -41,5 +41,16 @@ namespace LinkedList
                 temp = temp.next;
             }
         }
+        internal Node RemoveFirstNode()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
+
+
+        }
     }
 }
