@@ -12,6 +12,7 @@
 
             ln.InsertAtParticularPosition(3, 40);
             ln.Display();
+            ln.DeleteNodeAtParticularPosition(3);
         }
     }
 }
